@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="#FFFCFC"
-    android:layout_margin="8dp">
+    android:padding="20dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="382dp"
@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="132dp"
-            android:layout_height="122dp"
+            android:layout_width="111dp"
+            android:layout_height="110dp"
             android:layout_margin="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -22,8 +22,8 @@
 
         <TextView
             android:id="@+id/PName"
-            android:layout_width="143dp"
-            android:layout_height="27dp"
+            android:layout_width="86dp"
+            android:layout_height="31dp"
             android:textColor="#000000"
             android:textSize="12sp"
             android:textStyle="bold|italic"
@@ -35,8 +35,8 @@
 
         <TextView
             android:id="@+id/PP"
-            android:layout_width="151dp"
-            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="#120C0C"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -48,13 +48,14 @@
             android:id="@+id/Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="28dp"
             android:background="#9F9C9C"
             android:backgroundTint="#888787"
             android:text="buy"
             android:textColor="#FFFEFF"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/image2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.301"
             app:layout_constraintStart_toEndOf="@+id/PName"
             app:layout_constraintTop_toBottomOf="@id/PP" />
 
@@ -62,12 +63,13 @@
             android:id="@+id/image2"
             android:layout_width="53dp"
             android:layout_height="28dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="60dp"
             android:layout_marginBottom="4dp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/PName"
             app:layout_constraintStart_toEndOf="@+id/PName"
             app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_baseline_star_rate_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
