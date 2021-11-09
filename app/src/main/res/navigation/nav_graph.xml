@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/mobileList"
         android:name="com.example.hw_product_recycleview.mobileList"
-        android:label="fragment_mobile_list"
-        tools:layout="@layout/fragment_mobile_list" >
+        android:label="phone"
+        tools:layout="@layout/fragment_mobile_list">
         <action
             android:id="@+id/action_mobileList_to_buyphone"
             app:destination="@id/buyphone" />
@@ -17,10 +17,13 @@
     <fragment
         android:id="@+id/buyphone"
         android:name="com.example.hw_product_recycleview.Buyphone"
-        android:label="fragment_buyphone"
-        tools:layout="@layout/fragment_buyphone" >
+        android:label="phone detile "
+        tools:layout="@layout/fragment_buyphone">
         <argument
             android:name="namePhone"
             app:argType="string" />
+        <argument
+            android:name="imageId"
+            app:argType="integer" />
     </fragment>
 </navigation>

@@ -48,7 +48,8 @@ class itemAdapter(private val context: Context?): RecyclerView.Adapter<itemAdapt
 
         holder.ButBuy.setOnClickListener {
             if(item.stringResourceqn > 0) {
-                val action = mobileListDirections.actionMobileListToBuyphone(item.stringResourceName)
+                var action = mobileListDirections.actionMobileListToBuyphone(namePhone = item.stringResourceName,imageId = item.imageResourcId)
+
 
                 holder.itemView.findNavController().navigate(action)
             } else{
