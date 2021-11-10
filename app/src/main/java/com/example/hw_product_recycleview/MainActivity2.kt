@@ -29,3 +29,6 @@ class MainActivity2 : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
+
+
+// hello
