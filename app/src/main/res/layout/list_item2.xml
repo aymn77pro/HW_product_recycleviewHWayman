@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="#FFFCFC"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:layout_margin="16dp"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="382dp"
@@ -13,7 +16,7 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="111dp"
+            android:layout_width="96dp"
             android:layout_height="110dp"
             android:layout_margin="16dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -22,16 +25,17 @@
 
         <TextView
             android:id="@+id/PName"
-            android:layout_width="86dp"
-            android:layout_height="31dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:textSize="12sp"
+            android:textSize="15dp"
             android:textStyle="bold|italic"
+            android:text="aaaaaaaaaaaaaaa"
             app:layout_constraintBottom_toBottomOf="@id/imageView"
             app:layout_constraintStart_toEndOf="@id/imageView"
             app:layout_constraintTop_toTopOf="@id/imageView"
-            app:layout_constraintVertical_bias="0.348"
-            tools:text="aaaaaaaaaaaaa" />
+
+             />
 
         <TextView
             android:id="@+id/PP"
@@ -52,22 +56,22 @@
             android:background="#9F9C9C"
             android:backgroundTint="#888787"
             android:text="buy"
+            android:layout_marginRight="16dp"
             android:textColor="#FFFEFF"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.301"
-            app:layout_constraintStart_toEndOf="@+id/PName"
-            app:layout_constraintTop_toBottomOf="@id/PP" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="16dp" />
 
         <ImageView
             android:id="@+id/image2"
             android:layout_width="53dp"
             android:layout_height="28dp"
-            android:layout_marginStart="60dp"
             android:layout_marginBottom="4dp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/PName"
-            app:layout_constraintStart_toEndOf="@+id/PName"
+            app:layout_constraintEnd_toEndOf="@+id/Button"
+            app:layout_constraintStart_toStartOf="@+id/Button"
             app:layout_constraintTop_toTopOf="@+id/imageView"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_baseline_star_rate_24" />

@@ -37,11 +37,11 @@ class itemAdapter(private val context: Context?): RecyclerView.Adapter<itemAdapt
     override fun getItemCount(): Int {
         return dataset.size
     }
-
+///////////////////////////////////-------------------------------------------------------------------->
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
 
-        holder.imageView.setImageResource(item.imageResourcId)
+        holder.imageView .setImageResource(item.imageResourcId)
         holder.textName.text = item.stringResourceName
         holder.textPrice.text = item.stringResourcePrice
         holder.textVip.isVisible = if (item.stringResourceVip){true}else{false}
@@ -49,8 +49,6 @@ class itemAdapter(private val context: Context?): RecyclerView.Adapter<itemAdapt
         holder.ButBuy.setOnClickListener {
             if(item.stringResourceqn > 0) {
                 var action = mobileListDirections.actionMobileListToBuyphone(namePhone = item.stringResourceName,imageId = item.imageResourcId)
-
-
                 holder.itemView.findNavController().navigate(action)
             } else{
                 Toast.makeText(context, "not Availabe", Toast.LENGTH_SHORT).show()
