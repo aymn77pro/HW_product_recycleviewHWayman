@@ -31,4 +31,3 @@ class MainActivity2 : AppCompatActivity() {
 }
 
 
-// hello
